@@ -13,7 +13,7 @@ from openprocurement.auctions.core.tests.blanks.tender_blanks import (
     invalid_auction_conditions,
 )
 
-from openprocurement.auctions.flash.models import FLASHAuction
+from openprocurement.auctions.flash.models import FlashAuction
 from openprocurement.auctions.flash.tests.base import (
     BaseWebTest, BaseAuctionWebTest, test_auction_data, test_organization
 )
@@ -36,7 +36,7 @@ from openprocurement.auctions.flash.tests.blanks.tender_blanks import (
 
 
 class AuctionTest(BaseWebTest):
-    auction = FLASHAuction
+    auction = FlashAuction
     initial_data = test_auction_data
 
     test_simple_add_auction = snitch(simple_add_auction)
