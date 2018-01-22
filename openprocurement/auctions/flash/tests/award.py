@@ -19,7 +19,7 @@ from openprocurement.auctions.flash.tests.base import (
     test_organization
 )
 
-from openprocurement.auctions.flash.tests.blanks.award_blanks import (
+from openprocurement.auctions.core.plugins.awarding.v1.tests.blanks.award_blanks import (
     # AuctionAwardResourceTest
     create_auction_award_invalid,
     create_auction_award,
