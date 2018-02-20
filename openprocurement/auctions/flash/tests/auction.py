@@ -115,11 +115,13 @@ class AuctionFeaturesAuctionResourceTest(BaseAuctionWebTest):
 
 
 def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite(AuctionAuctionResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionSameValueAuctionResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotAuctionResourceTest))
-    return suite
+    tests = unittest.TestSuite()
+    tests.addTest(unittest.makeSuite(AuctionAuctionResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionSameValueAuctionResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotAuctionResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionMultipleLotAuctionResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionFeaturesAuctionResourceTest))
+    return tests
 
 
 if __name__ == '__main__':

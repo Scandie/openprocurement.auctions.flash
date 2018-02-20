@@ -24,10 +24,10 @@ class AuctionLotQuestionResourceTest(BaseAuctionWebTest):
 
 
 def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite(AuctionQuestionResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotQuestionResourceTest))
-    return suite
+    tests = unittest.TestSuite()
+    tests.addTest(unittest.makeSuite(AuctionQuestionResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotQuestionResourceTest))
+    return tests
 
 
 if __name__ == '__main__':

@@ -9,6 +9,9 @@ entry_points = {
     ],
     'openprocurement.api.migrations': [
         'auctions.flash = openprocurement.auctions.flash.migration:migrate_data'
+    ],
+    'openprocurement.tests': [
+        'auctions.flash = openprocurement.auctions.flash.tests.main:suite'
     ]
 }
 

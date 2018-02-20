@@ -193,18 +193,18 @@ class Auction2LotAwardDocumentResourceTest(BaseAuctionWebTest,
 
 
 def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite(AuctionAwardResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotAwardResourceTest))
-    suite.addTest(unittest.makeSuite(Auction2LotAwardResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionAwardComplaintResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotAwardComplaintResourceTest))
-    suite.addTest(unittest.makeSuite(Auction2LotAwardComplaintResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionAwardComplaintDocumentResourceTest))
-    suite.addTest(unittest.makeSuite(Auction2LotAwardComplaintDocumentResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionAwardDocumentResourceTest))
-    suite.addTest(unittest.makeSuite(Auction2LotAwardDocumentResourceTest))
-    return suite
+    tests = unittest.TestSuite()
+    tests.addTest(unittest.makeSuite(AuctionAwardResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotAwardResourceTest))
+    tests.addTest(unittest.makeSuite(Auction2LotAwardResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionAwardComplaintResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotAwardComplaintResourceTest))
+    tests.addTest(unittest.makeSuite(Auction2LotAwardComplaintResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionAwardComplaintDocumentResourceTest))
+    tests.addTest(unittest.makeSuite(Auction2LotAwardComplaintDocumentResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionAwardDocumentResourceTest))
+    tests.addTest(unittest.makeSuite(Auction2LotAwardDocumentResourceTest))
+    return tests
 
 
 if __name__ == '__main__':

@@ -71,10 +71,11 @@ class AuctionProcessTest(BaseAuctionWebTest):
 
 
 def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite(AuctionTest))
-    suite.addTest(unittest.makeSuite(AuctionResourceTest))
-    return suite
+    tests = unittest.TestSuite()
+    tests.addTest(unittest.makeSuite(AuctionTest))
+    tests.addTest(unittest.makeSuite(AuctionResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionProcessTest))
+    return tests
 
 
 if __name__ == '__main__':

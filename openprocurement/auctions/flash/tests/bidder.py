@@ -82,12 +82,12 @@ class AuctionBidderDocumentWithDSResourceTest(BaseAuctionWebTest,
 
 
 def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite(AuctionBidderResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionBidderFeaturesResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionBidderDocumentResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionBidderDocumentWithDSResourceTest))
-    return suite
+    tests = unittest.TestSuite()
+    tests.addTest(unittest.makeSuite(AuctionBidderResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionBidderFeaturesResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionBidderDocumentResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionBidderDocumentWithDSResourceTest))
+    return tests
 
 
 if __name__ == '__main__':

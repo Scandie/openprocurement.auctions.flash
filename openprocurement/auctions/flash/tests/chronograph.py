@@ -124,21 +124,21 @@ class AuctionLotAwardComplaintSwitchResourceTest(AuctionAwardComplaintSwitchReso
 
 
 def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite(AuctionSwitchtenderingResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionSwitchQualificationResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionSwitchAuctionResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionSwitchUnsuccessfulResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotSwitchQualificationResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotSwitchAuctionResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotSwitchUnsuccessfulResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionAuctionPeriodResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotAuctionPeriodResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionComplaintSwitchResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotComplaintSwitchResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionAwardComplaintSwitchResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotAwardComplaintSwitchResourceTest))
-    return suite
+    tests = unittest.TestSuite()
+    tests.addTest(unittest.makeSuite(AuctionSwitchtenderingResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionSwitchQualificationResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionSwitchAuctionResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionSwitchUnsuccessfulResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotSwitchQualificationResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotSwitchAuctionResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotSwitchUnsuccessfulResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionAuctionPeriodResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotAuctionPeriodResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionComplaintSwitchResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotComplaintSwitchResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionAwardComplaintSwitchResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotAwardComplaintSwitchResourceTest))
+    return tests
 
 
 if __name__ == '__main__':

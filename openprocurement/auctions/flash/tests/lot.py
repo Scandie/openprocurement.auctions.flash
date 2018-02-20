@@ -117,8 +117,8 @@ class AuctionLotFeatureBidderResourceTest(BaseAuctionWebTest):
         self.assertEqual(response.json['data']['items'][0]['relatedLot'], self.lot_id)
         self.set_status('active.tendering')
 
-    create_auction_bidder_invalid_feature = snitch(create_auction_bidder_invalid_feature)
-    create_auction_bidder_feature = snitch(create_auction_bidder_feature)
+    test_create_auction_bidder_invalid_feature = snitch(create_auction_bidder_invalid_feature)
+    test_create_auction_bidder_feature = snitch(create_auction_bidder_feature)
 
 
 class AuctionLotProcessTest(BaseAuctionWebTest, AuctionLotProcessTestMixin):
@@ -129,13 +129,13 @@ class AuctionLotProcessTest(BaseAuctionWebTest, AuctionLotProcessTestMixin):
 
 
 def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite(AuctionLotResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotFeatureResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotBidderResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotFeatureBidderResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotProcessTest))
-    return suite
+    tests = unittest.TestSuite()
+    tests.addTest(unittest.makeSuite(AuctionLotResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotFeatureResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotBidderResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotFeatureBidderResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotProcessTest))
+    return tests
 
 
 if __name__ == '__main__':

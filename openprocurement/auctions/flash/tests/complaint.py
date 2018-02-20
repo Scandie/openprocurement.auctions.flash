@@ -40,11 +40,11 @@ class AuctionComplaintDocumentResourceTest(BaseAuctionWebTest, InsiderAuctionCom
 
 
 def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite(AuctionComplaintResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotAwardComplaintResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionComplaintDocumentResourceTest))
-    return suite
+    tests = unittest.TestSuite()
+    tests.addTest(unittest.makeSuite(AuctionComplaintResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotAwardComplaintResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionComplaintDocumentResourceTest))
+    return tests
 
 
 if __name__ == '__main__':

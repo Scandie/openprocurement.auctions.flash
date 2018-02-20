@@ -45,12 +45,12 @@ class AuctionCancellationDocumentResourceTest(BaseAuctionWebTest,
 
 
 def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite(AuctionCancellationResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotCancellationResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionLotsCancellationResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionCancellationDocumentResourceTest))
-    return suite
+    tests = unittest.TestSuite()
+    tests.addTest(unittest.makeSuite(AuctionCancellationResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotCancellationResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionLotsCancellationResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionCancellationDocumentResourceTest))
+    return tests
 
 
 if __name__ == '__main__':

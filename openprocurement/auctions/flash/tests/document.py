@@ -37,10 +37,10 @@ class AuctionDocumentWithDSResourceTest(AuctionDocumentResourceTest):
 
 
 def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite(AuctionDocumentResourceTest))
-    suite.addTest(unittest.makeSuite(AuctionDocumentWithDSResourceTest))
-    return suite
+    tests = unittest.TestSuite()
+    tests.addTest(unittest.makeSuite(AuctionDocumentResourceTest))
+    tests.addTest(unittest.makeSuite(AuctionDocumentWithDSResourceTest))
+    return tests
 
 
 if __name__ == '__main__':
